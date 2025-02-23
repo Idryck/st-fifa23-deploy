@@ -11,9 +11,9 @@ if 'data' not in  st.session_state:
     st.session_state['data']=df_data
 md=st.markdown
 md('# Dataset oficial FIFA 2023! ')
-btn=st.button('Disponivel em:')
-if btn:
-    wb.open_new_tab('https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data')
+btn=st.link_button('Disponivel em:', 'https://www.kaggle.com/datasets/kevwesophia/fifa23-official-datasetclean-data')
+
+
 st.sidebar.markdown ("Analise Desenvolvida por [Lucas Souza](https://www.linkedin.com/in/lucas-souza-470365351/)")
 
 md(''' O dataset disponível no Kaggle sobre o FIFA 23 é uma excelente fonte de dados para entusiastas de futebol, cientistas de dados e desenvolvedores que desejam explorar informações detalhadas sobre jogadores, times, ligas e características do jogo. Ele contém uma vasta gama de atributos que refletem as habilidades, estatísticas e informações pessoais dos jogadores, bem como dados relacionados aos clubes e competições.
